@@ -15,6 +15,8 @@
     <link href="{{ asset('public/assets/css/template.min.css') }}" rel='stylesheet prefetch'> 
     <!-- select2 -->
     <link href="{{ asset('public/assets/css/select2.min.css') }}" rel='stylesheet'>
+    <!-- custom styles -->
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet"> <!-- Asegúrate de agregar esta línea -->
     <!-- Jquery  -->
     <script src="{{ asset('public/assets/js/jquery.min.js') }}"></script>
 </head>
@@ -90,9 +92,10 @@
     <script src="{{ asset('public/assets/js/bootstrap.min.js') }}"></script>
     <!-- select2 -->
     <script src="{{ asset('public/assets/js/select2.min.js') }}"></script>
+    <!-- custom script -->
+    <script src="{{ mix('js/app.js') }}" defer></script> <!-- Asegúrate de agregar esta línea -->
 
     <script type="text/javascript">
-
     $(function() { 
         $('table tbody tr').on('click', function() {
             $("input[name=email]").val($(this).children().first().text());
